@@ -1,1 +1,146 @@
-file 1
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red109\green109\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c50196\c50196\c50196;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl360\sa240\partightenfactor0
+
+\f0\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 About Version Control 
+\b0\fs24 \
+\pard\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 What is \'93version control\'94, and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall spe- cific versions later. For the examples in this book you will use so ware source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer. 
+\fs24 \
+
+\fs26\fsmilli13333 If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System (VCS) is a very wise thing to use. It allows you to revert files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also gener- ally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead. 
+\fs24 \
+\pard\pardeftab720\sl340\sa240\partightenfactor0
+
+\b\fs29\fsmilli14667 \cf2 Local Version Control Systems 
+\b0\fs24 \
+\pard\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 Many people\'92s version-control method of choice is to copy files into another di- rectory (perhaps a time-stamped directory, if they\'92re clever). This approach is very common because it is so simple, but it is also incredibly error prone. It is easy to forget which directory you\'92re in and accidentally write to the wrong file or copy over files you don\'92t mean to. 
+\fs24 \
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 27 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15640\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl260\sa240\partightenfactor0
+
+\fs21\fsmilli10667 \cf2 CHAPTER 1: Getting Started 
+\fs24 \
+\pard\intbl\itap1\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 To deal with this issue, programmers long ago developed local VCSs that had a simple database that kept all the changes to files under revision control. 
+\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15640\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\sa240\partightenfactor0
+
+\b \cf2 FIGURE 1-1 
+\b0 \
+\pard\intbl\itap1\pardeftab720\sl260\sa240\partightenfactor0
+
+\i\fs21\fsmilli10667 \cf2 Local version control. 
+\i0\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15640\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 28 \
+\pard\intbl\itap1\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 One of the more popular VCS tools was a system called RCS, which is still distributed with many computers today. Even the popular Mac OS X operating system includes the rcs command when you install the Developer Tools. RCS works by keeping patch sets (that is, the di erences between files) in a special format on disk; it can then re-create what any file looked like at any point in time by adding up all the patches. 
+\fs24 \
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\b\fs29\fsmilli14667 \cf2 Centralized Version Control Systems 
+\b0\fs24 \
+\pard\intbl\itap1\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 The next major issue that people encounter is that they need to collaborate with developers on other systems. To deal with this problem, Centralized Ver- sion Control Systems (CVCSs) were developed. These systems, such as CVS, Subversion, and Perforce, have a single server that contains all the versioned 
+\fs24 \cell \lastrow\row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15640\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 files, and a number of clients that check out files from that central place. For many years, this has been the standard for version control. 
+\fs24 \
+\pard\intbl\itap1\pardeftab720\sl260\sa240\partightenfactor0
+
+\fs21\fsmilli10667 \cf2 About Version Control 
+\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15640\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\sa240\partightenfactor0
+
+\b \cf2 FIGURE 1-2 
+\b0 \
+\pard\intbl\itap1\pardeftab720\sl260\sa240\partightenfactor0
+
+\i\fs21\fsmilli10667 \cf2 Centralized version control. 
+\i0\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15640\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 This setup o ers many advantages, especially over local VCSs. For example, everyone knows to a certain degree what everyone else on the project is doing. Administrators have fine-grained control over who can do what; and it\'92s far eas- ier to administer a CVCS than it is to deal with local databases on every client. 
+\fs24 \
+
+\fs26\fsmilli13333 However, this setup also has some serious downsides. The most obvious is the single point of failure that the centralized server represents. If that server goes down for an hour, then during that hour nobody can collaborate at all or save versioned changes to anything they\'92re working on. If the hard disk the cen- tral database is on becomes corrupted, and proper backups haven\'92t been kept, you lose absolutely everything \'96 the entire history of the project except whatev- er single snapshots people happen to have on their local machines. Local VCS systems su er from this same problem \'96 whenever you have the entire history of the project in a single place, you risk losing everything. 
+\fs24 \
+\pard\intbl\itap1\pardeftab720\sl340\sa240\partightenfactor0
+
+\b\fs29\fsmilli14667 \cf2 Distributed Version Control Systems 
+\b0\fs24 \
+\pard\intbl\itap1\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 This is where Distributed Version Control Systems (DVCSs) step in. In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don\'92t just check out the latest 
+\fs24 \
+\pard\intbl\itap1\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 29 \cell \lastrow\row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15640\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl260\sa240\partightenfactor0
+
+\fs21\fsmilli10667 \cf2 CHAPTER 1: Getting Started 
+\fs24 \
+\pard\intbl\itap1\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 snapshot of the files: they fully mirror the repository. Thus if any server dies, and these systems were collaborating via it, any of the client repositories can be copied back up to the server to restore it. Every checkout is really a full back- up of all the data. 
+\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15640\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrs\brdrw10\brdrcf2 \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\sa240\partightenfactor0
+
+\b \cf2 FIGURE 1-3 
+\b0 \
+\pard\intbl\itap1\pardeftab720\sl260\sa240\partightenfactor0
+
+\i\fs21\fsmilli10667 \cf2 Distributed version control. 
+\i0\fs24 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth15640\clftsWidth3 \clbrdrt\brdrs\brdrw10\brdrcf2 \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\sa240\partightenfactor0
+\cf2 30 \
+\pard\intbl\itap1\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 Furthermore, many of these systems deal pretty well with having several re- mote repositories they can work with, so you can collaborate with di erent groups of people in di erent ways simultaneously within the same project. This 
+\fs24 \cell \lastrow\row
+\pard\pardeftab720\sl300\sa240\partightenfactor0
+
+\fs26\fsmilli13333 \cf2 allows you to set up several types of workflows that aren\'92t possible in central- ized systems, such as hierarchical models. 
+\fs24 \
+\
+}
