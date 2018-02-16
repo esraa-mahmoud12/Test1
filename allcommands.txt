@@ -1,0 +1,40 @@
+1- git init
+
+2-git config --global user.name "esraa-mahmoud12"
+  git config --global user.email "esraa_mahmoud1998@hotmail.com"
+
+3-git add file1.txt
+  git commit -m "firstfile"
+
+  git add file2.txt
+  git commit -m "second file"
+ 
+ git add file3.txt
+ git commit -m "third file"
+
+4- git rm file2.txt
+
+5-git reset file2.txt
+
+6-git commit -m "back file"
+
+7-git remote add origin https://github.com/esraa-mahmoud12/Test1.git
+   git push -u origin master
+
+8- git checkout -b READMe
+   git checkout READMe
+
+9- git add README.md
+   git commit -m "x" 
+
+   git push origin ReadMe(to push the branch into repo)
+
+10- git checkout master
+    git merge READMe
+    git checkout master
+    git push origin master(to merge and push)
+
+11- git add allcommands.txt
+    git commit -m "commands"
+    git remote add origin https://github.com/esraa-mahmoud12/Test1.git
+    git push -u origin master
